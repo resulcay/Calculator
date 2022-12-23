@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Set position of EditText cursor to the end.
+        // Set position of EditText cursor to the  end.
         val editText = findViewById<EditText>(R.id.editTextValue)
         editText.setSelection(editText.length())
     }
