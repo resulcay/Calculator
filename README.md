@@ -1,6 +1,6 @@
 # Calculator
 
-This is android app which make simple calculations. Also built via Kotlin.
+This is an android app which make simple calculations. Also built via Kotlin.
 
 ---ScreenShots and other Media---
 
