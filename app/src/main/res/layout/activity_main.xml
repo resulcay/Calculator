@@ -12,7 +12,7 @@
     <EditText
         android:id="@+id/editTextValue"
         android:layout_width="wrap_content"
-        android:layout_height="356dp"
+        android:layout_height="183dp"
         android:background="@color/textBackground"
         android:cursorVisible="false"
         android:ems="10"
@@ -35,7 +35,7 @@
             <Button
                 android:id="@+id/btnClear"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -46,7 +46,7 @@
             <Button
                 android:id="@+id/btnIncreaseDecrease"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -55,12 +55,13 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnPercent"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:gravity="fill_vertical"
+                android:onClick="onPercent"
                 android:text="%"
                 android:textAlignment="center"
                 android:textSize="24sp" />
@@ -68,7 +69,7 @@
             <Button
                 android:id="@+id/btnDivide"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onOperation"
@@ -84,7 +85,7 @@
             <Button
                 android:id="@+id/btn7"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -95,7 +96,7 @@
             <Button
                 android:id="@+id/btn8"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -106,7 +107,7 @@
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -117,7 +118,7 @@
             <Button
                 android:id="@+id/btnMultiply"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onOperation"
@@ -133,7 +134,7 @@
             <Button
                 android:id="@+id/btn4"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -144,7 +145,7 @@
             <Button
                 android:id="@+id/btn5"
                 android:layout_width="90dp"
-                android:layout_height="match_parent"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -155,7 +156,7 @@
             <Button
                 android:id="@+id/btn6"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -166,7 +167,7 @@
             <Button
                 android:id="@+id/btnSubtract"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onOperation"
@@ -182,7 +183,7 @@
             <Button
                 android:id="@+id/btn1"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -193,7 +194,7 @@
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -204,7 +205,7 @@
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -215,13 +216,13 @@
             <Button
                 android:id="@+id/btnAdd"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
+                android:onClick="onOperation"
                 android:text="+"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                android:onClick="onOperation" />
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -231,18 +232,18 @@
             <Button
                 android:id="@+id/btn0"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
+                android:onClick="onButtonPressed"
                 android:text="0"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                android:onClick="onButtonPressed" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:textAlignment="center"
@@ -251,7 +252,7 @@
             <Button
                 android:id="@+id/btnDot"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_border"
                 android:onClick="onButtonPressed"
@@ -262,7 +263,7 @@
             <Button
                 android:id="@+id/btnEqual"
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="65dp"
                 android:layout_weight="1"
                 android:background="@color/darker_blue"
                 android:onClick="onEqual"

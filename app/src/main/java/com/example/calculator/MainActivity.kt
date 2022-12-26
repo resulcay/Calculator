@@ -79,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             getButtonId(R.id.btnClear)->
             {
                 selectedButtonValue = ""
+                newOperator = true
             }
         }
 
@@ -118,14 +119,14 @@ class MainActivity : AppCompatActivity() {
                 operator = "+"
             }
         }
-        oldNumber = editText.text.toString()
+        oldNumber = selectedButtonValue
         newOperator = true
     }
 
     fun onEqual(view:View)
     {
-        var editText = findViewById<EditText>(R.id.editTextValue)
-        var newNumber : String = editText.text.toString()
+        val editText = findViewById<EditText>(R.id.editTextValue)
+        val newNumber : String = editText.text.toString()
         var resultNumber : Double? = null
 
         when(operator)
@@ -152,5 +153,15 @@ class MainActivity : AppCompatActivity() {
         newOperator = true
 
     }
+
+    fun onPercent(view: View) = try {
+     val button = findViewById<EditText>(R.id.editTextValue)
+     val percentage : Double = button.text.toString().toDouble() / 100
+     button.setText(percentage.toString())
+     newOperator = true
+ }
+ catch (ex:Exception){
+     println(ex)
+ }
 
 }
